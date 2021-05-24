@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.sequence" id="seq_jewellery_management">
+            <field name="name">Jewellery Management Sequence</field>
+            <field name="code">jew_name.id</field>
+            <field name="padding">3</field>
+            <field name="prefix">JEW</field>
+        </record>
+        <!--Sequence genration for password-->
+<!--         <record model="ir.sequence" id="seq_pass">-->
+<!--            <field name="name">Trainee Password</field>-->
+<!--            <field name="code">trainee.pass</field>-->
+<!--            <field name="padding">3</field>-->
+<!--            <field name="prefix">Trainee</field>-->
+<!--        </record>-->
+    </data>
+</odoo>

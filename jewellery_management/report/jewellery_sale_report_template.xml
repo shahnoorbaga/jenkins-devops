@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="report_jewellery_saleorder">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.basic_layout">
+                        <div class="header">
+                            <div class="row justify-content-between">
+                                <div class="col-8">
+                                    <h1><b>Jewellery Sale Report</b></h1>
+                                </div>
+                            </div>
+                            <div>
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                            </div>
+                        </div>
+                        <div class="page" style="font-size: 12px" >
+                            <h2>Jewellery ID: <span t-field="o.name"/></h2><br/>
+                            <table class="table table-sm table-bordered">
+                                <thead class="bg-primary">
+                                    <tr>
+                                        <th scope="col">Order Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col"><span t-field="o.order_date"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-sm table-bordered">
+                                <thead style="display: table-row-group;display: table-header-group;" class="bg-primary">
+                                    <tr class="border-left-0 border-right-0" style="border: 1px solid #b2b5b7;">
+                                        <th class="text-left">Sr. No.</th>
+                                        <th class="text-right">Product</th>
+                                        <th class="text-right">Quantity</th>
+                                        <th class="text-right">Unit of measure</th>
+                                        <th class="text-right">Unit Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="jewellery_tbody">
+                                    <t t-set="counter" t-value="0"/>
+                                    <t t-foreach="o.jewellery_line_ids" t-as="line">
+                                        <t t-set="counter" t-value="counter+1"/>
+                                        <tr>
+                                            <td class="text-right">
+                                                <span t-esc="counter"/>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-field="line.product_id"/>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-field="line.product_qty"/>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-field="line.uom_jewel"/>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-field="line.unit_price"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

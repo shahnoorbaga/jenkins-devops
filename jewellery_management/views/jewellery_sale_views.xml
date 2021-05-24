@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="jewellery_management.list">
+            <field name="name">Jewellery Management list</field>
+            <field name="model">jewellery.management</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit form view definition -->
+        <record model="ir.ui.view" id="jewellery_management.form">
+            <field name="name">Jewellery Management form</field>
+            <field name="model">jewellery.management</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="jewellery_state_id" widget="statusbar" options="{'clickable': '1'}"/>
+                        <button name="create_sale_order_jewel" type="object" string="Create SaleOrder"
+                                attrs="{'invisible': [('jewellery_state_id', '=', 4)]}" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" icon="fa-share-square" name="show_sales" type="object">
+                                <!--                                attrs="{'invisible': [('sale_count', '=', 0)]}" groups="base.group_user">-->
+                                <field name="sale_count" string="Sale Count" widget="statinfo" />
+                            </button>
+                        </div>
+                        <widget name="web_ribbon" title="Draft" bg_color="bg-info" attrs="{'invisible': [('jewellery_state_id', 'in', (2,3,4))]}"/>
+                        <widget name="web_ribbon" title="In Progress" bg_color="bg-primary" attrs="{'invisible': [('jewellery_state_id', 'in', (1,3,4))]}"/>
+                        <widget name="web_ribbon" title="Cancel" bg_color="bg-danger" attrs="{'invisible': [('jewellery_state_id', 'in', (1,2,4))]}"/>
+                        <widget name="web_ribbon" title="Done" bg_color="bg-success" attrs="{'invisible': [('jewellery_state_id', 'in', (1,2,3))]}"/>
+
+                        <div class="oe_title">
+                            <h2>
+                                <span>Jewellery Id: </span><field name="name" string="Partner Name" readonly="1"/>
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="jewellery_type" string="Jewellery Type" placeholder="Select Type of jewellery"/>
+                                <field name="partner_id" string="Partner" placeholder="Select Partner"/>
+                                <label for="street" string="Address"/>
+                                <div class="o_address_format" >
+                                    <field name="street" placeholder="Street..." class="o_address_street" />
+                                    <field name="street2" placeholder="Street 2..." class="o_address_street" />
+                                    <field name="city" placeholder="City" class="o_address_city" />
+                                    <field name="country_id" placeholder="Country" class="o_address_country"/>
+                                    <field name="state_id" class="o_address_state" placeholder="State"  context="{'country_id': country_id, 'default_country_id': country_id}"/>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="order_date" placeholder="Order Date" string="Order Date"/>
+                                <field name="sale_order_ref" string="Sale Order Ref"/>
+                               <!--<field name="payment_term" placeholder="Terms and Conditions" string="Payment Terms"/>-->
+                                <field name="sale_ids" domain="[('is_jewel', '=', True)]" invisible="1"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <!--              Tab 1-->
+                            <page string="Jewellery Order Line">
+                                <field name="jewellery_line_ids"  widget="section_and_note_one2many" mode="tree,kanban">
+                                    <tree string="Jewellery Order Line" editable="bottom">
+                                        <control>
+                                            <create name="add_line_control" string="Add a line"/>
+                                            <create name="add_section_control" string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                                            <create name="add_note_control" string="Add a note" context="{'default_display_type': 'line_note'}"/>
+                                        </control>
+                                        <!--                      <field name="image"/>-->
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="display_type" invisible="1"/>
+                                        <field name="product_id"/>
+                                        <field name="product_qty"/>
+                                        <field name="uom_jewel"/>
+                                        <field name="unit_price" />
+                                        <field name="currency_id" invisible="True "/>
+                                    </tree>
+
+
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- explicit kanban view definition -->
+        <record id="jewellery_management.kanban" model="ir.ui.view">
+            <field name="name">Jewellery Management kanban</field>
+            <field name="model">jewellery.management</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="name"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_details">
+                                <strong class="o_kanban_record_title">
+                                    <field name="name"/>
+                                </strong>
+                                <div class="o_kanban_tags_section"/>
+                                <ul>
+                                    <!--                  <li>Email: <field name="email"/> </li>-->
+                                </ul>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+
+        <record model="ir.actions.act_window" id="jewellery_management.action_jewellery_window">
+            <field name="name">Jewellery Management</field>
+            <field name="res_model">jewellery.management</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+
+
+
+    </data>
+</odoo>

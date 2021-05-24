@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--List view-->
+        <record id="jewellery_state_list" model="ir.ui.view">
+            <field name="name">Jewellery State list</field>
+            <field name="model">jewellery.state</field>
+            <field name="arch" type="xml">
+                <tree string="Jewellery States list">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!--Form View-->
+        <record id="jewellery_state_form" model="ir.ui.view">
+            <field name="name">Jewellery State form</field>
+            <field name="model">jewellery.state</field>
+            <field name="arch" type="xml">
+                <form string="Jewellery states form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--action-->
+        <record model="ir.actions.act_window" id="jewellery_management.action_jewellery_state">
+            <field name="name">Jewellery State</field>
+            <field name="res_model">jewellery.state</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

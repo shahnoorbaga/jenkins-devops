@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="paperformat_jewellery_sale_report" model="report.paperformat">
+            <field name="name">Jewellery Sale Report</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <!--            <field name="page_height">297</field>-->
+            <!--            <field name="page_width">210</field>-->
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">3</field>
+            <field name="margin_bottom">3</field>
+            <field name="margin_left">3</field>
+            <field name="margin_right">3</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">3</field>
+            <field name="dpi">80</field>
+        </record>
+
+        <record id="jewellery_sale_report" model="ir.actions.report">
+            <!--Field names-->
+            <field name="name">Jewellery Sale Report</field>
+            <field name="report_type">qweb-html</field>
+            <field name="model">jewellery.management</field>
+
+            <!--Template defination link template and this file-->
+            <field name="report_name">jewellery_management.report_jewellery_saleorder</field>
+            <field name="report_file">jewellery_management.report_jewellery_saleorder</field>
+            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Jewellery_sale - %s' % (object.name)) or 'jewellery_sale_Order - %s' % (object.name)</field>
+
+
+            <!--Link model-->
+            <field name="binding_model_id" ref="model_jewellery_management"/>
+            <!--Type-->
+            <field name="binding_type">report</field>
+
+            <!--Paperformat id-->
+            <field name="paperformat_id" ref="paperformat_jewellery_sale_report"/>
+        </record>
+    </data>
+</odoo>

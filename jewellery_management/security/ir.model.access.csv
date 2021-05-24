@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_jewellery_management,jewellery.management,model_jewellery_management,base.group_user,1,1,1,1
+access_jewellery_sale_line,jewellery.line,model_jewellery_line,base.group_user,1,1,1,1
+access_jewellery_state,jewellery.state,model_jewellery_state,base.group_user,1,1,1,1
+access_jewellery_manage_manager,jewellery.management,model_jewellery_management,jewellery_management.group_jewellery_manager,1,1,1,1
+access_jewellery_manage_user,jewellery.management,model_jewellery_management,jewellery_management.group_jewellery_user,1,0,1,0
+access_jewellery_manage_salesperson,jewellery.management,model_jewellery_management,jewellery_management.group_jewellery_salesperson,1,1,1,0

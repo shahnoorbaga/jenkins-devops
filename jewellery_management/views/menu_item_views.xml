@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <!-- Top menu item -->
+
+        <menuitem name="Jewellery Management System" id="jewellery_management.menu_root" web_icon="jewellery_management,static/description/icon.png"/>
+
+        <!-- menu categories -->
+
+        <menuitem name="Jewellery Sale" id="jewellery_management.menu_1" parent="jewellery_management.menu_root"/>
+        <menuitem name="Jewellery Master" id="jewellery_management.menu_2" parent="jewellery_management.menu_1" action="jewellery_management.action_jewellery_window"/>
+        <menuitem name="Jewellery state" id="jewellery_management.menu_3" parent="jewellery_management.menu_1" action="jewellery_management.action_jewellery_state"/>
+        <!--
+    <menuitem name="Menu 2" id="jewellery_management.menu_2" parent="jewellery_management.menu_root"/>
+        -->
+        <!-- actions -->
+        <!--
+            <menuitem name="List" id="jewellery_management.menu_1_list" parent="jewellery_management.menu_1"
+                      action="jewellery_management.action_window"/>
+            <menuitem name="Server to list" id="jewellery_management" parent="jewellery_management.menu_2"
+                      action="jewellery_management.action_server"/>
+        -->
+    </data>
+</odoo>

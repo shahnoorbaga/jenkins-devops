@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="module_category_jewellery_management" model="ir.module.category">
+            <field name="name">Jewellery Management System</field>
+            <field name="description">Helps mange Jewellery Sales</field>
+            <field name="sequence">30</field>
+        </record>
+    </data>
+</odoo>
