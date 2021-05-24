@@ -79,6 +79,8 @@
                                         <field name="uom_jewel"/>
                                         <field name="unit_price" />
                                         <field name="currency_id" invisible="True "/>
+					 <!--<field name="currency_id" invisible="True "/>-->
+
                                     </tree>
 
 
