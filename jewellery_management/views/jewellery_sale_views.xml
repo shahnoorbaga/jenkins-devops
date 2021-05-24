@@ -54,8 +54,8 @@
                             </group>
                             <group>
                                 <field name="order_date" placeholder="Order Date" string="Order Date"/>
-				<!--<field name="sale_order_ref" string="Sale Order Ref"/>
-					-->
+				<field name="sale_order_ref" string="Sale Order Ref"/>
+				
 					       <!--<field name="payment_term" placeholder="Terms and Conditions" string="Payment Terms"/>-->
                                 <field name="sale_ids" domain="[('is_jewel', '=', True)]" invisible="1"/>
                             </group>
