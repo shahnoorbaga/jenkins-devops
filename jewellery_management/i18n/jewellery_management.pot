@@ -1,0 +1,679 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* jewellery_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20210310\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 09:09+0000\n"
+"PO-Revision-Date: 2021-12-15 09:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: jewellery_management
+#: model:ir.actions.report,print_report_name:jewellery_management.jewellery_sale_report
+msgid ""
+"(object.state in ('draft', 'sent') and 'Jewellery_sale - %s' % "
+"(object.name)) or 'jewellery_sale_Order - %s' % (object.name)"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "<b>Jewellery Sale Report</b>"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "<span>Jewellery Id: </span>"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Add a line"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Add a note"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Add a section"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model,name:jewellery_management.model_product_template
+msgid "Adding boolean field is jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Address"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__antique
+msgid "Antique Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__bead
+msgid "Bead Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__bridal
+msgid "Bridal Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Cancel"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__city
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "City"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__country_id
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Country"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Create SaleOrder"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__create_uid
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__create_uid
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__create_date
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__create_date
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__display_name
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__display_name
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__display_name
+#: model:ir.model.fields,field_description:jewellery_management.field_product_template__display_name
+#: model:ir.model.fields,field_description:jewellery_management.field_sale_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__display_type
+msgid "Display Type"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Done"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Draft"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__fashion
+msgid "Fashion Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__filigree
+msgid "Filigree Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__handmade
+msgid "Handmade Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.module.category,description:jewellery_management.module_category_jewellery_management
+msgid "Helps mange Jewellery Sales"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__id
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__id
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__id
+#: model:ir.model.fields,field_description:jewellery_management.field_product_template__id
+#: model:ir.model.fields,field_description:jewellery_management.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_needaction
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_has_error
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "In Progress"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_product_product__is_jewellery
+#: model:ir.model.fields,field_description:jewellery_management.field_product_template__is_jewellery
+msgid "Is Jewellery?"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_sale_order__is_jewel
+msgid "Is it Jewellery?"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_sale_order__jewel_id
+msgid "Jewel_id"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Jewellery ID:"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.actions.act_window,name:jewellery_management.action_jewellery_window
+msgid "Jewellery Management"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model,name:jewellery_management.model_jewellery_management
+#: model:ir.module.category,name:jewellery_management.module_category_jewellery_management
+#: model:ir.ui.menu,name:jewellery_management.menu_root
+msgid "Jewellery Management System"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.ui.menu,name:jewellery_management.menu_2
+msgid "Jewellery Master"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__jewellery_line_ids
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Jewellery Order Line"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.ui.menu,name:jewellery_management.menu_1
+msgid "Jewellery Sale"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__jewellery_sale_id
+msgid "Jewellery Sale Id"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model,name:jewellery_management.model_jewellery_line
+msgid "Jewellery Sale Line"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.actions.report,name:jewellery_management.jewellery_sale_report
+msgid "Jewellery Sale Report"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.actions.act_window,name:jewellery_management.action_jewellery_state
+msgid "Jewellery State"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.jewellery_state_list
+msgid "Jewellery States list"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__jewellery_type
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Jewellery Type"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.ui.menu,name:jewellery_management.menu_3
+msgid "Jewellery state"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model,name:jewellery_management.model_jewellery_state
+msgid "Jewellery states"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.jewellery_state_form
+msgid "Jewellery states form"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__kundan
+msgid "Kundan Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line____last_update
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management____last_update
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state____last_update
+#: model:ir.model.fields,field_description:jewellery_management.field_product_template____last_update
+#: model:ir.model.fields,field_description:jewellery_management.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__write_uid
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__write_uid
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__write_date
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__write_date
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: jewellery_management
+#: model:res.groups,name:jewellery_management.group_jewellery_manager
+msgid "Manager"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__minakari
+msgid "Minakari Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__name
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__name
+msgid "Name"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__navratna
+msgid "Navratna Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_line__display_type__line_note
+msgid "Note"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Order Date"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__order_date
+msgid "Order date"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Partner"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__partner_id
+msgid "Partner Id"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__name
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Partner Name"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__payment_term
+msgid "Payment Terms"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__polki
+msgid "Polki Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Product"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__product_id
+msgid "Product Id"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__product_qty
+msgid "Product Quantity"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Quantity"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__sale_count
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Sale Count"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Sale Order Ref"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__sale_order_ref
+msgid "Sale Order Reference"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model,name:jewellery_management.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: jewellery_management
+#: model:res.groups,name:jewellery_management.group_jewellery_salesperson
+msgid "Salesperson"
+msgstr ""
+
+#. module: jewellery_management
+#: code:addons/jewellery_management/models/jewellery_sale.py:0
+#, python-format
+msgid "Sample Order Line"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_line__display_type__line_section
+msgid "Section"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Select Partner"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Select Type of jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__sequence
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_state__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Sr. No."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__state_id
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "State"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__street
+msgid "Street 1"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__street2
+msgid "Street 2"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Street 2..."
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.form
+msgid "Street..."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_line__display_type
+msgid "Technical field for UX purpose."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields.selection,name:jewellery_management.selection__jewellery_management__jewellery_type__temple
+msgid "Temple Jewellery"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__sale_ids
+msgid "Transfers"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__unit_price
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Unit Price"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_line__uom_jewel
+msgid "Unit of Measure"
+msgstr ""
+
+#. module: jewellery_management
+#: model_terms:ir.ui.view,arch_db:jewellery_management.report_jewellery_saleorder
+msgid "Unit of measure"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: jewellery_management
+#: model:res.groups,name:jewellery_management.group_jewellery_user
+msgid "User"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,help:jewellery_management.field_jewellery_management__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: jewellery_management
+#: model:ir.model.fields,field_description:jewellery_management.field_jewellery_management__jewellery_state_id
+msgid "states"
+msgstr ""
